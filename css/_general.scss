@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,600;8..144,800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+    height: 100%;
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+html{
+    font-size: 70%;
+    box-sizing: border-box;
+}
+$indigo: #6610f2;
+.colorPrincipal{
+    color: $indigo;
+}
+ul{
+    color: white;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(9, 152, 255);
+    font-size: 2rem;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+#header, #tarjetasDestino, #footer, .mySlide {
+    width: 100%;
+    margin: auto;
+}
+
+/*variables*/
+
+$font-p: 1.5rem;
+$font-h1: 5.0rem;
+$font-h2: 4.0rem;
+$font-h4: 2.4rem;
+
+p{
+    font-size:$font-p;
+    color: rgb(70, 66, 66);
+}
+h1{
+    font-size: $font-h1;
+}
+h2{
+    font-size: $font-h2;
+}
+h4{
+    font-size: $font-h4;
+}
+
+.btn{
+    border: none;
+    border-radius: 2px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    background-color:#6610f2;
+}
+.btn-principal{
+    @extend .btn;
+}
+
+@mixin caja-flex($principal, $horizontal, $wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $horizontal;
+    flex-wrap: $wrap;
+}
