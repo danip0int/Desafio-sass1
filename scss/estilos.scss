@@ -1,5 +1,5 @@
 @import 'general';
-
+@import 'responsive';
 
 /*HEADER*/
 #header{
@@ -23,10 +23,9 @@
             transform: scale(1.2);
         }
     }
-    #navbarSupportedContent{
+    .navbar-nav{
         position: absolute;
         right: 0px;
-        bottom: 5px;
     }
 }
 
@@ -90,14 +89,12 @@
         border-radius: 50%;
         transition: all 0.3s ease;
     }
-    
     .carousel-control-next{
         right: 120px;
     }
     .carousel-control-prev{
         left: 120px;
     }
-
 }
 @keyframes fadeInLeft{
     0%{
