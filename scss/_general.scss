@@ -60,7 +60,14 @@ h4{
     font-size: $font-h4;
 }
 
-.btn{
+@mixin caja-flex($principal, $horizontal, $wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $horizontal;
+    flex-wrap: $wrap;
+}
+
+/*.btn{
     border: none;
     border-radius: 2px;
     padding: 0.7em 1.5em;
@@ -74,11 +81,7 @@ h4{
 }
 .btn-principal{
     @extend .btn;
-}
+}*/ 
 
-@mixin caja-flex($principal, $horizontal, $wrap){
-    display: flex;
-    justify-content: $principal;
-    align-items: $horizontal;
-    flex-wrap: $wrap;
-}
+// este botón iba a ir en la tarjeta "ver mas" pero no me convenció
+
