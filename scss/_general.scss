@@ -15,17 +15,12 @@ html{
     font-size: 70%;
     box-sizing: border-box;
 }
-$indigo: #6610f2;
-.colorPrincipal{
-    color: $indigo;
-}
 ul{
     color: white;
     list-style-type: none;
 }
 a{
     text-decoration: none;
-    display: inline-block;
     color: rgb(9, 152, 255);
     font-size: 2rem;
 }
@@ -42,13 +37,12 @@ img{
 /*variables*/
 
 $font-p: 1.5rem;
-$font-h1: 5.0rem;
-$font-h2: 4.0rem;
-$font-h4: 2.4rem;
+$font-h1: 9rem;
+$font-h2: 5.0rem;
+$font-h4: 2.5rem;
 
 p{
     font-size:$font-p;
-    color: rgb(70, 66, 66);
 }
 h1{
     font-size: $font-h1;

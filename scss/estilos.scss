@@ -10,7 +10,7 @@
     width: 100%;
 }
 .navbar{
-    @include caja-flex (space-between, center, nowrap);
+    @include caja-flex (space-between, center, wrap);
     ul{
         display: flex;
         padding: 0;
@@ -23,13 +23,17 @@
             transform: scale(1.2);
         }
     }
-    .navbar-nav{
+    #navbarSupportedContent{
         position: absolute;
         right: 0px;
+        bottom: 5px;
     }
 }
 
-/*HOME*/
+/*Contenido principal HOME*/
+h1{
+    @include caja-flex (center, center, nowrap);
+}
 .animacion-hover:hover{
 	transform: translateY(-10px);
 	box-shadow: 0px 0px 25px #666;
@@ -43,7 +47,6 @@
         background-size: cover;
         position: relative;
         z-index: 1;
-        
         &:before{
             content: '';
             position: absolute;
@@ -61,14 +64,14 @@
             text-align: center;
         }
         h1{
-            font-size: 80px;
+            font-size: $font-h1;
             color: #ffffff;
             margin: 0 0 10px;
         }
         p{
-            font-size: 30px;
+            font-size: 40px;
             margin: 0;
-            color: #eeeeee;
+            color: #ffffff;
             opacity: 0;
         }
     }
